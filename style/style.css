@@ -1,0 +1,163 @@
+body{
+    margin: 0;
+    font-family: Nunito Sans;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*header*/
+.header{
+    background: #131313; 
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 15px;
+    position: relative;
+    z-index: 333;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1256px;
+    height: 83px;
+    margin: 0 auto;
+    
+}
+.logo{
+    color: #E3B873;
+    text-transform: uppercase;
+    /*margin-left: 92px;
+    margin-right: 55px;*/
+}
+
+.header__navi{
+    display: flex;
+}
+
+.header__navi__link{
+    margin-right:47px;
+}
+
+.header__navi__link a{
+    color: #ffff;
+}
+.header__navi__link a:hover{
+    color: #E3B873;
+}
+.phone__number{
+    color: #E3B873;
+    text-align: right;
+    text-decoration-line: underline;
+}
+
+.button{
+    background: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border-radius: 2px;
+    border: none;
+    padding: 13px 33px;
+    font-style: italic;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffff;
+}
+
+/*Main*/
+.back{
+    background-image: url(../Images/pic.jpg);
+    background-size: cover;
+    height: 707px;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 676.11px;
+    height: 305px;
+    margin-left: 253px;
+}
+
+.title{
+    margin: 0;
+    padding-top: 194px;
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 53px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+}
+
+.Rostov{
+    color: #E3B873;
+}
+
+.subtitle{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 36px;  
+    color: #FFFFFF;
+}
+
+.for_buttons{
+    display: flex;
+    
+    width: 676.109px;
+}
+
+.button__cost{
+    background-color: transparent;
+    box-sizing: border-box;
+    border: 1px solid #FFFFFF;
+    border-radius: 2px;
+    outline: none;
+    color: #FFFFFF;
+    padding: 19px 42px 21px 41px;
+    margin-right: 20px;
+}
+.button__cost:hover{
+    background: #E3B873;
+    color: #FFFFFF;
+}
+
+.button__aplication{
+    background-color: transparent;
+    box-sizing: border-box;
+    border: 1px solid #FFFFFF;
+    border-radius: 2px;
+    outline: none;
+    color: #FFFFFF;
+    padding: 19px 42px 21px 41px;
+  
+}
+
+.button__aplication:hover{
+    background: #E3B873;
+    color: #FFFFFF;
+}
+
+.back__overlay{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.overlay{
+    position: relative;
+    z-index: 1;
+}

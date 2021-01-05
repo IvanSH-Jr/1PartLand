@@ -71,10 +71,11 @@ a{
 }
 
 /*Main*/
-.back{
+.basic-promo{
     background-image: url(../Images/pic.jpg);
     background-size: cover;
     height: 707px;
+    position: relative;
 }
 
 .box{
@@ -110,39 +111,26 @@ a{
     color: #FFFFFF;
 }
 
-.for_buttons{
+.basic-promo__buttons{
     display: flex;
-    
-    width: 676.109px;
+    width: 676.109px;    
+}
+
+.basic-promo__comon-buttons{
+    background-color: transparent;
+    box-sizing: border-box;
+    border: 1px solid #FFFFFF;
+    border-radius: 2px;
+    outline: none;
+    color: #FFFFFF;
+    padding: 19px 42px 21px 41px;
 }
 
 .button__cost{
-    background-color: transparent;
-    box-sizing: border-box;
-    border: 1px solid #FFFFFF;
-    border-radius: 2px;
-    outline: none;
-    color: #FFFFFF;
-    padding: 19px 42px 21px 41px;
+    
     margin-right: 20px;
 }
-.button__cost:hover{
-    background: #E3B873;
-    color: #FFFFFF;
-}
-
-.button__aplication{
-    background-color: transparent;
-    box-sizing: border-box;
-    border: 1px solid #FFFFFF;
-    border-radius: 2px;
-    outline: none;
-    color: #FFFFFF;
-    padding: 19px 42px 21px 41px;
-  
-}
-
-.button__aplication:hover{
+.basic-promo__comon-buttons:hover{
     background: #E3B873;
     color: #FFFFFF;
 }

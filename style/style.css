@@ -11,6 +11,16 @@ a{
     text-decoration: none;
 }
 
+/*Commonclass*/
+.text{
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
 /*header*/
 .header{
     background: #131313; 
@@ -24,12 +34,17 @@ a{
 
 .container{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /*justify-content: space-between;
+    align-items: center;*/
     max-width: 1256px;
     height: 83px;
     margin: 0 auto;
     
+}
+.container-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .logo{
     color: #E3B873;
@@ -148,4 +163,18 @@ a{
 .overlay{
     position: relative;
     z-index: 1;
+}
+
+
+.completed_projects{
+    background-color: black;
+    height: 1074px;
+}
+
+.completed_projects-content{
+    display: flex;
+}
+
+.projects_nav-list{
+    display: flex;
 }

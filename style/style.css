@@ -6,21 +6,59 @@ body{
 li{
     list-style: none;
 }
-
+h2,h3{
+    margin: 0;
+}
 a{
     text-decoration: none;
 }
+p{
+    margin: 0;
+}
 
 /*Commonclass*/
-.text{
+.text-Yeseva{
     font-family: Yeseva One;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 19px;
     text-transform: uppercase;
     color: #FFFFFF;
 }
+
+.text-Nunito{
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    color: #FFFFFF;
+}
+
+.text-size13px21px{
+    font-size: 13px;
+    line-height: 21px;
+}
+
+.text-size14px27px{
+    font-size: 14px;
+    line-height: 27px;
+}
+
+.text-size27px37px{
+    font-size: 27px;
+    line-height: 37px;
+}
+
+.text-size18px25px{
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.colorYel{
+    color: #E3B873;
+}
+.colorWht{
+    color: #FFFFFF;
+}
+/************/
 /*header*/
 .header{
     background: #131313; 
@@ -34,10 +72,8 @@ a{
 
 .container{
     display: flex;
-    /*justify-content: space-between;
-    align-items: center;*/
     max-width: 1256px;
-    height: 83px;
+    /*height: 83px;*/
     margin: 0 auto;
     
 }
@@ -45,6 +81,7 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 83px;
 }
 .logo{
     color: #E3B873;
@@ -71,6 +108,7 @@ a{
     color: #E3B873;
     text-align: right;
     text-decoration-line: underline;
+    margin-right: 45px;
 }
 
 .button{
@@ -171,10 +209,68 @@ a{
     height: 1074px;
 }
 
-.completed_projects-content{
+.container-box{
     display: flex;
+    flex-direction: column;
+    
 }
 
+.projects_nav{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 107px;
+    /*margin-right: 8.55px;*/
+    
+}
 .projects_nav-list{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.nav-list-link{
+    margin-right: 60.5px;
+    font-size: 14px;
+    line-height: 19px;
+}
+.nav-list-link:hover{
+    border-bottom: 1px solid #E3B873;
+    color: #E3B873;
+}
+
+.conatiner-completed_projects{
+    display: flex;
+    margin-top: 45px;
+    /*justify-content: space-between;*/
+}
+
+.content-example{
+    display: flex;
+    margin-top: 42px;
+}
+.completed_projects-example{
+    width: 442px;
+    height: 390px;
+}
+.completed_projects-example,h2{
+    margin-bottom: 34px;
+}
+
+.completed_projects-images{
+    margin-left: 50px;
+}
+.content-example{
+    display: flex;
+    flex-wrap: wrap;
+}
+    
+.content-example-description{
+    width: 50%;
+    /*margin-bottom: 34px;*/
+    margin-top: 32px;
+}
+
+.item-top{
+    margin-top: 9px;
 }

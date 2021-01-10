@@ -51,6 +51,10 @@ p{
     font-size: 18px;
     line-height: 25px;
 }
+.text-size20px28px{
+    font-size: 20px;
+    line-height: 28px;
+}
 
 .colorYel{
     color: #E3B873;
@@ -273,4 +277,57 @@ p{
 
 .item-top{
     margin-top: 9px;
+}
+
+.slider{
+    margin-top: 79.64px;   
+}
+
+.online-control{
+    background-color: #FFFFFF;
+}
+
+.online-control-camera{
+    width: 817px;
+    margin: -298px auto 0;
+    text-align: center;
+}
+.camera-picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12.79px;
+}
+.camera-picture-area{
+    margin: 0 7.76px;
+}
+
+/*.online-control-video_player{
+    display: flex;
+    justify-content: center;
+    margin-top: 31.21px;
+}*/
+
+.online-control-video_player{
+    display: flex;
+    justify-content: center;
+    margin: 31.21px auto 0;
+    background-image: url(../Images/video.png);
+    position: relative;
+    background-size: cover;
+    width: 817px;
+    height: 434px;
+}
+.play-button {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    position: relative;
+    top: 38%;
+    background-color: #E3B873;
+}
+.play-button__img {
+    position: absolute;
+    top: 36%;
+    left: 42%;
 }

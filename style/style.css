@@ -56,11 +56,25 @@ p{
     line-height: 28px;
 }
 
+.text-for_article{
+    color: #363636;
+    text-align: center;
+}
+.text-align{
+    text-align: center;
+}
 .colorYel{
     color: #E3B873;
 }
 .colorWht{
     color: #FFFFFF;
+}
+
+.colorBlk{
+    color:#181818;
+}
+.center-for-content{
+    margin: 0 auto;
 }
 /************/
 /*header*/
@@ -330,4 +344,103 @@ p{
     position: absolute;
     top: 36%;
     left: 42%;
+}
+
+.linebottom{
+    margin-top: 62.5px;
+}
+
+.online-control-article{
+    
+    margin: 34.46px auto 91.5px;
+}
+
+.article-size{
+    width: 681px;
+    height: 150px;
+    /*Height: 130,91px;*/
+}
+
+.online-control-input_of_personal_date{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 769px;
+
+}
+.input_of_personal_date{
+    display:flex;
+    justify-content: space-between;
+    width: 769px;
+}
+.input_of_personal_date-item{
+    text-align: left;
+    font-size: 13px;
+    line-height: 21px;
+    color: rgba(54, 54, 54, 0.5);
+}
+
+.input_of_personal_date-item input{
+    width: 231px;
+    border: 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(54, 54, 54, 0.5);
+}
+.button-submit{
+    width: 200px;
+    height: 51px;
+}
+/*.input_of_personal_date{
+    display: flex;
+}*/
+.input_of_personal_date-checkbox{
+    margin-top: 35px;
+    margin-bottom: 75.85px;
+
+}
+.label{
+    cursor: pointer;
+}
+
+.label-checkbox{
+    display: none;
+  }
+.label-fake{
+    display: inline-flex;
+    width: 18px;
+    height: 18px;
+    background: #E3B873;
+    color: #fff;
+    justify-content: center;
+}
+.label-fake::before{
+    content:"\2713";
+    /*content: "\2713";*/
+    opacity: 0;
+    transition: .2s;
+}
+.label-checkbox:checked + .label-fake::before{
+    opacity: 1;
+    
+}
+
+.label-text{
+    font-size: 14px;
+    line-height: 23px;
+    color: #181818;
+}
+.types_of_repair__center{
+    justify-content: center;
+}
+.container-section-name{
+    width: 257px;
+    margin-bottom: 31px;
+}
+.types_of_repair-img{
+    margin-top: 13px;
+}
+.types_of_repair-content{
+    display: flex;
+    justify-content: space-between;
 }

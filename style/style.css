@@ -64,6 +64,9 @@ p{
     color: #363636;
     text-align: center;
 }
+.text-align{
+    text-align: center;
+}
 .colorYel{
     color: #E3B873;
 }
@@ -73,6 +76,9 @@ p{
 
 .colorBlk{
     color:#181818;
+}
+.center-for-content{
+    margin: 0 auto;
 }
 /************/
 /*header*/
@@ -413,16 +419,32 @@ p{
     justify-content: center;
 }
 .label-fake::before{
-    content:"\2714";
+    content:"\2713";
+    /*content: "\2713";*/
     opacity: 0;
     transition: .2s;
 }
 .label-checkbox:checked + .label-fake::before{
     opacity: 1;
+    
 }
 
 .label-text{
     font-size: 14px;
     line-height: 23px;
     color: #181818;
+}
+.types_of_repair__center{
+    justify-content: center;
+}
+.container-section-name{
+    width: 257px;
+    margin-bottom: 31px;
+}
+.types_of_repair-img{
+    margin-top: 13px;
+}
+.types_of_repair-content{
+    display: flex;
+    justify-content: space-between;
 }

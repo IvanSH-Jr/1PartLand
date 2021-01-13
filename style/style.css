@@ -3,10 +3,7 @@ body{
     font-family: Nunito Sans;
     box-sizing: border-box;
 }
-li{
-    list-style: none;
-}
-h2,h3{
+h2,h3,h4{
     margin: 0;
 }
 a{
@@ -24,14 +21,18 @@ p{
     text-transform: uppercase;
     color: #FFFFFF;
 }
-
+.text-Yeseva-noneUp{
+    text-transform: none;
+}
 .text-Nunito{
     font-family: Nunito Sans;
     font-style: normal;
     font-weight: normal;
     color: #FFFFFF;
 }
-
+.text-font-styleIt{
+    font-style: italic;
+}
 .text-size13px21px{
     font-size: 13px;
     line-height: 21px;
@@ -39,6 +40,11 @@ p{
 
 .text-size14px27px{
     font-size: 14px;
+    line-height: 27px;
+}
+
+.text-size13px27px{
+    font-size: 13px;
     line-height: 27px;
 }
 
@@ -55,7 +61,14 @@ p{
     font-size: 20px;
     line-height: 28px;
 }
-
+.text-size22px36px{
+    font-size: 22px;
+    line-height: 36px;
+}
+.text-size40px53px{
+    font-size: 40px;
+    line-height: 53px;
+}
 .text-for_article{
     color: #363636;
     text-align: center;
@@ -72,6 +85,9 @@ p{
 
 .colorBlk{
     color:#181818;
+}
+.colorGry{
+    color:#959595;
 }
 .center-for-content{
     margin: 0 auto;
@@ -112,6 +128,10 @@ p{
     display: flex;
 }
 
+.header__navi > li{
+    list-style: none;
+}
+
 .header__navi__link{
     margin-right:47px;
 }
@@ -135,7 +155,7 @@ p{
     border-radius: 2px;
     border: none;
     padding: 13px 33px;
-    font-style: italic;
+    /*font-style: normal;*/
     text-align: center;
     text-transform: uppercase;
     color: #ffff;
@@ -149,37 +169,24 @@ p{
     position: relative;
 }
 
-.box{
+.basic-promo-content{
     display: flex;
     flex-direction: column;
     width: 676.11px;
-    height: 305px;
-    margin-left: 253px;
+    margin-left: 42px;
 }
 
-.title{
+.basic-promo-content-title{
     margin: 0;
     padding-top: 194px;
-    font-family: Yeseva One;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 40px;
-    line-height: 53px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-
 }
 
 .Rostov{
     color: #E3B873;
 }
 
-.subtitle{
-    font-style: normal;
-    font-weight: normal;
-    font-size: 22px;
-    line-height: 36px;  
-    color: #FFFFFF;
+.basic-promo-content-subtitle{
+    margin: 19px 0 41px;
 }
 
 .basic-promo__buttons{
@@ -247,10 +254,16 @@ p{
     margin: 0;
     padding: 0;
 }
+
+.projects_nav-list > li{
+    list-style: none;
+}
+
 .nav-list-link{
     margin-right: 60.5px;
     font-size: 14px;
     line-height: 19px;
+    color: rgba(255, 255, 255, 0.3);
 }
 .nav-list-link:hover{
     border-bottom: 1px solid #E3B873;
@@ -430,17 +443,51 @@ p{
     line-height: 23px;
     color: #181818;
 }
+.types_of_repair-content .types_of_repair-content-item:nth-child(2){
+    margin: 0 30px;
+
+}
 .types_of_repair__center{
-    justify-content: center;
+    /*justify-content: center;*/
+    flex-direction: column;
+    align-items: center;
 }
 .container-section-name{
     width: 257px;
     margin-bottom: 31px;
 }
-.types_of_repair-img{
-    margin-top: 13px;
+.types_of_repair-content-item-img1{
+    width: 392px;
+    height: 421px;
+    background-image: url(../Images/repair1.png);
+}
+.types_of_repair-content-item-img2{
+    width: 392px;
+    height: 421px;
+    background-image: url(../Images/repair2.png);
+}
+.types_of_repair-content-item-img3{
+    width: 392px;
+    height: 421px;
+    background-image: url(../Images/repair3.png);
 }
 .types_of_repair-content{
     display: flex;
     justify-content: space-between;
+}
+
+.item-list-text{
+    padding: 0;
+    margin: 13px 0 10px;
+}
+.types_of_repair-content-item > .button{
+    font-style: normal;
+}
+.types_of_repair-content-item-basic{
+    margin: -127px 31px 0;
+    background-color: #fff;
+}
+.types_of_repair-content-item-list{
+    margin: 25px 32px 0 31px;
+    
 }

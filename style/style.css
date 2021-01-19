@@ -12,6 +12,9 @@ a{
 p{
     margin: 0;
 }
+ul{
+    padding: 0;
+}
 
 /*Commonclass*/
 .text-Yeseva{
@@ -120,12 +123,13 @@ p{
 .logo{
     color: #E3B873;
     text-transform: uppercase;
-    /*margin-left: 92px;
-    margin-right: 55px;*/
+    margin-right: 95.47px;
+    
 }
 
 .header__navi{
     display: flex;
+    justify-content: space-between;
 }
 
 .header__navi > li{
@@ -146,7 +150,8 @@ p{
     color: #E3B873;
     text-align: right;
     text-decoration-line: underline;
-    margin-right: 45px;
+    margin: 0 45px 0 67.36px;
+    /*margin-right: 45px;*/
 }
 
 .button{

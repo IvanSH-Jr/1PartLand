@@ -15,7 +15,14 @@ p{
 ul{
     padding: 0;
 }
-
+input{
+    border:none;
+    background-image:none;
+    background-color:transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
 /*Commonclass*/
 .text-Yeseva{
     font-family: Yeseva One;
@@ -72,6 +79,18 @@ ul{
     font-size: 40px;
     line-height: 53px;
 }
+.text-size14px19px{
+    font-size: 14px;
+    line-height: 19px;
+}
+.text-size18px26px{
+    font-size: 18px;
+    line-height: 26px;
+}
+.text-size14px23px{
+    font-size: 14px;
+    line-height: 23px;
+}
 .text-for_article{
     color: #363636;
     text-align: center;
@@ -95,6 +114,8 @@ ul{
 .center-for-content{
     margin: 0 auto;
 }
+
+
 /************/
 /*header*/
 .header{
@@ -495,4 +516,103 @@ ul{
 .types_of_repair-content-item-list{
     margin: 25px 32px 0 31px;
     
+}
+/*FREASON-SECTION*/
+.freason{
+    background-image: url(../Images/backHouse.png);
+    background-repeat: no-repeat;
+}
+
+.freason-box{
+    margin-top: 124px;
+    justify-content: space-between;
+}
+
+.freason-list{
+    /*background-image: url(../Images/backHouse.png);
+    width: 50%;*/
+    height: 580px;
+}
+
+.freason-list-items{
+    display: flex;
+    margin-bottom: 86.24px;
+    /*margin-left: 100px;*/
+}
+
+.freason-list-items:last-child{
+    margin-bottom: 0;
+}
+
+.freason-list-items-number{
+    background: #E3B873;
+    border: 8px solid #FFFFFF;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+    border-radius: 50%;
+    margin-right: 17px;
+    padding: 15px;
+}
+
+.freason-list-items-Text{
+    display: flex;
+    align-items: center;
+    margin-left: 9.05px;
+}
+
+.freason-request{
+    background: #131313;
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+    width: 506px;
+    height: 509px;
+    margin-left: 131px;
+}
+
+.freason-request-header{
+    margin-top:27px;
+}
+
+.freason-request-personal-date{
+    width: 408px;
+    margin: 39px auto ;
+}
+
+.freason-request-personal-date-item{
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 48px;
+}
+
+.freason-request-personal-date-item:last-of-type{
+    margin-bottom: 16px;
+}
+
+.freason-request-personal-date-item input{
+   
+    border: 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    width: 408px;
+}
+
+.freason-request-personal-date-item input::-webkit-input-placeholder{
+    color: #FFFFFF;
+   
+}
+
+.freason-label{
+    margin-bottom: 39px;
+}
+
+.freason-request-personal-date-button{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 28px;
+}
+
+.freason-discount{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.freason-discount-img{
+    background-color: #E3B873;
 }

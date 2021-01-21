@@ -87,9 +87,21 @@ input{
     font-size: 18px;
     line-height: 26px;
 }
+.text-size18px29px{
+    font-size: 18px;
+    line-height: 29px;
+}
 .text-size14px23px{
     font-size: 14px;
     line-height: 23px;
+}
+.text-size20px38px{
+    font-size: 20px;
+    line-height: 38px;
+}
+.text-size17px24px{
+    font-size: 17px;
+    line-height: 24px;
 }
 .text-for_article{
     color: #363636;
@@ -611,8 +623,141 @@ input{
 .freason-discount{
     display: flex;
     justify-content: flex-end;
+    margin-top: 15px;
+    margin-bottom: 242.09px;
+}
+
+.freason-discount-box{
+    display: flex;
 }
 
 .freason-discount-img{
+    width: 40px;
+    height: 33.04px;
+    background: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+    border-radius: 50%;
+    margin-right: 25px;
+    padding: 15px;
+}
+
+.freason-discount-text{
+    text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+    color: #E3B873;
+}
+
+/*FANTASIES*/
+
+.fantasies{
+    background-image: url(../Images/fantasies.png);
+    height: 864px;
+}
+
+.fantasies-list{
+    z-index: 1;
+    margin-top: 137.47px;
+}
+
+.fantasies-list h2{
+    width: 411px;
+}
+
+.fantasies-list-text > li{
+    list-style: none;
+}
+
+.fantasies-list-text-item:hover{
+    display: inline;
+    color: #E3B873;
+    border-bottom: 1px solid #E3B873;
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+.fantasies-img{
+    display: flex;
+    margin-top: 137.47px;
+    margin-left: 77px;
+    z-index: 1;
+}
+
+.fantasies-img-leftbar{
+    margin-right: 43.19px;
+    margin-top: -178px;
+}
+
+.fantasies-img-leftbar-item1{
+    margin-bottom: 39.53px;
+}
+
+.fantasies-img-leftbar-item3{
+    margin-bottom: 36.77px;
+}
+
+.fantasies-img-rightbar{
+    margin-top: -250px;
+}
+
+/*OURCLIENTS*/
+
+.our-clients{
+    margin-top: 110.47px;
+}
+
+.our-clients-box{
+    flex-direction: column;
+}
+
+.our-clients-header{
+    margin: 0 auto 39px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.our-clients-header-img{
+    margin: 12.22px 0 24.16px;
+}
+
+.our-clients-review{
+    display: flex;
+    margin-bottom: 131.92px;
+}
+
+.our-clients-review-item{
+    width: 376px;
+    height: 455.03px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+    margin-right: 54px;
+}
+
+.our-clients-review-item:last-child{
+    margin-right: 0;
+}
+
+.our-clients-review-item-header{
+    display: flex;
+    align-items: center;
+    margin: 24px 0 22px 20px;
+}
+
+.our-clients-review-item-header > p{
+    margin-left: 23px;
+}
+
+.our-clients-review-item-article{
+    margin-left: 20px;
+    margin-right: 31.92px;
+    margin: 0 31.92px 67px 20px;
+}
+
+.our-clients-review-item-result{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     background-color: #E3B873;
+    width: 293.75px;
+    /*height: 54;*/
+    
 }

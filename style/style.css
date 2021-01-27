@@ -322,7 +322,7 @@ input{
     width: 442px;
     height: 390px;
 }
-.completed_projects-example,h2{
+.completed_projects-example ,h2{
     margin-bottom: 34px;
 }
 
@@ -702,10 +702,15 @@ input{
 
 .our-clients{
     margin-top: 110.47px;
+    background-image: url(../Images/city.png);
+    /*background-size: auto;*/
+    background-position: bottom;
 }
 
 .our-clients-box{
     flex-direction: column;
+    /*background-image: url(../Images/city.png);
+    height: 1000px;*/
 }
 
 .our-clients-header{
@@ -721,7 +726,9 @@ input{
 
 .our-clients-review{
     display: flex;
-    margin-bottom: 131.92px;
+    justify-content: space-between;
+    margin-bottom: 354.61px;
+    /*background-image: url(../Images/city.png);*/
 }
 
 .our-clients-review-item{
@@ -760,4 +767,111 @@ input{
     width: 293.75px;
     /*height: 54;*/
     
+}
+
+/*.section-back{
+    background-image: url(../Images/city.png);
+}
+*/
+
+
+/*GEOLOCATION*/
+
+.geolocation{
+    background-image: url(../Images/geoback.png);
+    background-size: cover;
+}
+
+.geolocation-box{
+    flex-direction: column;
+    align-items: center;
+}
+
+.geolocation-feedback{
+    z-index: 1;    
+    width: 883px;
+    height: 445.32px;
+    background-color: black;
+    margin: -222.66px auto 52.01px;
+}
+
+.geolocation-feedback-personal-date{
+    margin: 34.4px 181.5px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.geolocation-feedback-personal-date-name_phone{
+    display: flex;
+    justify-content: space-between;
+    width: 520px;
+    margin-bottom: 48.76px;
+    margin-top: 45.8px;
+}
+
+/*.geolocation-personal-date-item{
+    justify-content: space-between;
+}
+
+.geolocation-personal-date-item:last-child{
+    margin-right: 0;
+}
+*/
+.geolocation-feedback-personal-date-name_phone input{
+    border: 0;
+    padding-bottom: 8px;
+    border-bottom: 4px solid rgba(255, 255, 255, 0.15);
+    width: 231px;
+}
+
+.geolocation-feedback-personal-date-question{
+    margin-bottom: 46.46px;
+}
+
+.geolocation-feedback-personal-date-question input{
+    border: 0;
+    padding-bottom: 8px;
+    border-bottom: 4px solid rgba(255, 255, 255, 0.15);
+    width: 520px;
+}
+
+.geolocation-personal-date-item{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.geolocation-personal-date-item input::-webkit-input-placeholder{
+    color: #FFFFFF;
+}
+
+.geolocation-adress{
+    z-index: 1;
+}
+
+.geolocation-adress-subtitle{
+    margin-bottom: 26px;
+}
+
+.geolocation-adress-icons{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 43.29px;
+}
+.geolocation-adress-icons > img:last-child{
+    margin-left: 15px;
+}
+
+.geolocation-overlay{
+    background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
+}
+
+/*FOOTER*/
+.footer{
+    background: #131313; 
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 15px;
+    position: relative;
+    z-index: 333;
 }

@@ -3,18 +3,23 @@ body{
     font-family: Nunito Sans;
     box-sizing: border-box;
 }
+
 h2,h3,h4{
     margin: 0;
 }
+
 a{
     text-decoration: none;
 }
+
 p{
     margin: 0;
 }
+
 ul{
     padding: 0;
 }
+
 input{
     border:none;
     background-image:none;
@@ -23,7 +28,9 @@ input{
     -moz-box-shadow: none;
     box-shadow: none;
 }
+
 /*Commonclass*/
+
 .text-Yeseva{
     font-family: Yeseva One;
     font-style: normal;
@@ -31,18 +38,22 @@ input{
     text-transform: uppercase;
     color: #FFFFFF;
 }
+
 .text-Yeseva-noneUp{
     text-transform: none;
 }
+
 .text-Nunito{
     font-family: Nunito Sans;
     font-style: normal;
     font-weight: normal;
     color: #FFFFFF;
 }
+
 .text-font-styleIt{
     font-style: italic;
 }
+
 .text-size13px21px{
     font-size: 13px;
     line-height: 21px;
@@ -67,52 +78,65 @@ input{
     font-size: 18px;
     line-height: 25px;
 }
+
 .text-size20px28px{
     font-size: 20px;
     line-height: 28px;
 }
+
 .text-size22px36px{
     font-size: 22px;
     line-height: 36px;
 }
+
 .text-size40px53px{
     font-size: 40px;
     line-height: 53px;
 }
+
 .text-size14px19px{
     font-size: 14px;
     line-height: 19px;
 }
+
 .text-size18px26px{
     font-size: 18px;
     line-height: 26px;
 }
+
 .text-size18px29px{
     font-size: 18px;
     line-height: 29px;
 }
+
 .text-size14px23px{
     font-size: 14px;
     line-height: 23px;
 }
+
 .text-size20px38px{
     font-size: 20px;
     line-height: 38px;
 }
+
 .text-size17px24px{
     font-size: 17px;
     line-height: 24px;
 }
+
 .text-for_article{
     color: #363636;
     text-align: center;
 }
+
 .text-align{
     text-align: center;
 }
+
 .colorYel{
     color: #E3B873;
 }
+
 .colorWht{
     color: #FFFFFF;
 }
@@ -120,6 +144,7 @@ input{
 .colorBlk{
     color:#181818;
 }
+
 .colorGry{
     color:#959595;
 }
@@ -131,6 +156,7 @@ input{
 
 /************/
 /*header*/
+
 .header{
     background: #131313; 
     font-style: normal;
@@ -147,11 +173,13 @@ input{
     margin: 0 auto;
     
 }
+
 .container-content{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .logo{
     color: #E3B873;
     text-transform: uppercase;
@@ -176,9 +204,11 @@ input{
 .header__navi__link a{
     color: #ffff;
 }
+
 .header__navi__link a:hover{
     color: #E3B873;
 }
+
 .phone__number{
     color: #E3B873;
     text-align: right;
@@ -267,7 +297,6 @@ input{
 
 .completed_projects{
     background-color: black;
-    /*height: 1074px;*/
 }
 
 .container-box{
@@ -280,9 +309,8 @@ input{
     display: flex;
     justify-content: flex-end;
     margin-top: 107px;
-    /*margin-right: 8.55px;*/
-    
 }
+
 .projects_nav-list{
     display: flex;
     justify-content: space-between;
@@ -438,7 +466,6 @@ input{
 .label-fake{
     display: inline-flex;
     width: 18px;
-    /*height: 18px;*/
     background: #E3B873;
     color: #fff;
     justify-content: center;
@@ -446,7 +473,6 @@ input{
 
 .label-fake::before{
     content:"\2713";
-    /*content: "\2713";*/
     opacity: 0;
     transition: .2s;
 }
@@ -507,13 +533,16 @@ input{
     padding: 0;
     margin: 13px 0 10px;
 }
+
 .types_of_repair-content-item > .button{
     font-style: normal;
 }
+
 .types_of_repair-content-item-basic{
     margin: -127px 31px 0;
     background-color: #fff;
 }
+
 .types_of_repair-content-item-list{
     margin: 25px 32px 0 31px;
     
@@ -530,15 +559,12 @@ input{
 }
 
 .freason-list{
-    /*background-image: url(../Images/backHouse.png);
-    width: 50%;*/
     height: 580px;
 }
 
 .freason-list-items{
     display: flex;
     margin-bottom: 86.24px;
-    /*margin-left: 100px;*/
 }
 
 .freason-list-items:last-child{
@@ -642,7 +668,6 @@ input{
     background-image: url(../Images/fantasies.png);
     background-repeat: no-repeat;
     background-size: cover;
-    /*height: 864px;*/
 }
 
 .fantasies-box{
@@ -677,8 +702,6 @@ input{
 
 .fantasies-img{
     display: flex;
-    /*margin-top: 137.47px;
-    margin-bottom: 97.53px;*/
     margin-left: 77px;
     z-index: 1;
 }
@@ -711,8 +734,6 @@ input{
 
 .our-clients-box{
     flex-direction: column;
-    /*background-image: url(../Images/city.png);
-    height: 1000px;*/
 }
 
 .our-clients-header{
@@ -730,7 +751,6 @@ input{
     display: flex;
     justify-content: space-between;
     margin-bottom: 354.61px;
-    /*background-image: url(../Images/city.png);*/
 }
 
 .our-clients-review-item{
@@ -771,12 +791,6 @@ input{
     
 }
 
-/*.section-back{
-    background-image: url(../Images/city.png);
-}
-*/
-
-
 /*GEOLOCATION*/
 
 .geolocation{
@@ -812,14 +826,6 @@ input{
     margin-top: 45.8px;
 }
 
-/*.geolocation-personal-date-item{
-    justify-content: space-between;
-}
-
-.geolocation-personal-date-item:last-child{
-    margin-right: 0;
-}
-*/
 .geolocation-feedback-personal-date-name_phone input{
     border: 0;
     padding-bottom: 8px;
@@ -859,6 +865,7 @@ input{
     justify-content: center;
     margin-bottom: 43.29px;
 }
+
 .geolocation-adress-icons > img:last-child{
     margin-left: 15px;
 }
@@ -877,3 +884,5 @@ input{
     position: relative;
     z-index: 333;
 }
+
+/**********ADAPTIVE*************/

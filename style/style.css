@@ -210,10 +210,14 @@ input{
 }
 
 .phone__number{
-    color: #E3B873;
+    color: #fff;
     text-align: right;
     text-decoration-line: underline;
     margin: 0 45px 0 67.36px;
+}
+
+.phone__number:hover{
+    color: #E3B873;
 }
 
 .button{
@@ -294,8 +298,9 @@ input{
     z-index: 1;
 }
 
-
+/*COMPLETEDPROJECTS*/
 .completed_projects{
+    display: none;
     background-color: black;
 }
 
@@ -371,7 +376,10 @@ input{
     margin-top: 79.64px;   
 }
 
+/*ONLINECONTROL*/
+
 .online-control{
+    display: none;
     background-color: #FFFFFF;
 }
 
@@ -487,6 +495,11 @@ input{
     color: #181818;
 }
 
+/*TYPESOFREPAIR*/
+.types_of_repair{
+    display: none;
+}
+
 .types_of_repair-content .types_of_repair-content-item:nth-child(2){
     margin: 0 30px;
 
@@ -551,6 +564,7 @@ input{
 .freason{
     background-image: url(../Images/backHouse.png);
     background-repeat: no-repeat;
+    display: none;
 }
 
 .freason-box{
@@ -668,6 +682,7 @@ input{
     background-image: url(../Images/fantasies.png);
     background-repeat: no-repeat;
     background-size: cover;
+    display: none;
 }
 
 .fantasies-box{
@@ -730,6 +745,7 @@ input{
     background-image: url(../Images/city.png);
     background-position: bottom;
     background-repeat: repeat-x;
+    display: none;
 }
 
 .our-clients-box{
@@ -796,6 +812,7 @@ input{
 .geolocation{
     background-image: url(../Images/geoback.png);
     background-size: cover;
+    display: none;
 }
 
 .geolocation-box{
@@ -883,6 +900,74 @@ input{
     line-height: 15px;
     position: relative;
     z-index: 333;
+    display: none;
 }
 
 /**********ADAPTIVE*************/
+@media screen and (max-width: 768px){
+
+    .container{
+        max-width: 768px;
+        margin: 0 18px
+    }
+
+    /*HEADER-MOBILE*/
+
+    .header__navi{
+        display: none;
+    }
+
+    .button{
+        display: none;
+    }
+
+    .container-content{
+        height: 57px;
+        width: 100%;
+    }
+
+    .header-box{
+        justify-content: center;
+    }
+
+    .phone__number{
+        margin: 0;
+    }
+
+    .logo{
+        margin-right: 0;
+    }
+
+    /*BASIC-PROMO*/
+
+    .basic-promo-content{
+        margin: 0;
+        width: 100%;
+        margin-top: 85px;
+        text-align: center;
+    }
+
+    .basic-promo-content-title{
+        padding: 0;
+    }
+
+    .mobilesize23px31px{
+        font-size: 23px;
+        line-height: 31px;
+    }
+    .basic-promo-content-subtitle{
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .basic-promo__buttons{
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 61px;
+    }
+
+    .button__cost{
+        margin-right: 0;
+        margin-bottom: 26px;
+    }
+}

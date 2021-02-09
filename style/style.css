@@ -300,7 +300,7 @@ input{
 
 /*COMPLETEDPROJECTS*/
 .completed_projects{
-    display: none;
+    /*display: none;*/
     background-color: black;
 }
 
@@ -341,30 +341,33 @@ input{
 
 .conatiner-completed_projects{
     display: flex;
+    flex-direction: column;
     margin: 45px 0 414.72px;
+}
+
+.conatiner-completed_projects-box{
+    display: flex;
+
+}
+
+.conatiner-completed_projects-box-items > h2{
+    margin-bottom: 34px;
 }
 
 .content-example{
     display: flex;
-    margin-top: 42px;
-}
-.completed_projects-example{
+    flex-wrap: wrap;
+    justify-content: space-between;
     width: 442px;
-}
-.completed_projects-example ,h2{
-    margin-bottom: 34px;
+    margin-top: -298px;
 }
 
 .completed_projects-images{
     margin-left: 50px;
 }
-.content-example{
-    display: flex;
-    flex-wrap: wrap;
-}
     
 .content-example-description{
-    width: 50%;
+    width: 221px;
     margin-top: 32px;
 }
 
@@ -970,4 +973,8 @@ input{
         margin-right: 0;
         margin-bottom: 26px;
     }
+
+    /*COMPLETED-PROJECTS*/
+
+    
 }

@@ -365,7 +365,11 @@ input{
 .completed_projects-images{
     margin-left: 50px;
 }
-    
+
+.completed_projects-images-left, .completed_projects-images-right{
+    display: none;
+}
+
 .content-example-description{
     width: 221px;
     margin-top: 32px;
@@ -382,7 +386,6 @@ input{
 /*ONLINECONTROL*/
 
 .online-control{
-    display: none;
     background-color: #FFFFFF;
 }
 
@@ -408,24 +411,37 @@ input{
 }
 
 .online-control-video-button{
+    z-index: 1;
     margin: 175px 365px;
+    position: relative;
+}
+
+.online-control-video-button-icon{
+    width: 85px;
+    height: 85px;
+}
+/*.online-control-video-button{
+    margin: 175px 365px;
+    /*padding: 20px 0;
     background: #E3B873;
     border-radius: 50%;
     position: relative;
     z-index: 1;
     width: 85px;
-}
+    text-align: center;
+}*/
 
-.online-control-video-button-icon{
-    margin: 30px 0;
-    margin-left: 34px;
-}
+
 /********************************************/
 .linebottom{
     margin-top: 62.5px;
+    text-align: center;
 }
 
 .online-control-article{
+    display: flex;
+    justify-content: center;
+    width: 50%;
     margin: 34.46px auto 91.5px;
 }
 
@@ -441,6 +457,7 @@ input{
 .input_of_personal_date{
     display:flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 769px;
 }
 
@@ -462,9 +479,12 @@ input{
     width: 200px;
 }
 
+.button-mobile-submit{
+    display: none;
+}
+
 .input_of_personal_date-checkbox{
-    margin-top: 35px;
-    margin-bottom: 75.85px;
+    margin: 35px auto 75.85px;
 }
 .label{
     cursor: pointer;
@@ -499,9 +519,9 @@ input{
 }
 
 /*TYPESOFREPAIR*/
-.types_of_repair{
+/*.types_of_repair{
     display: none;
-}
+}*/
 
 .types_of_repair-content .types_of_repair-content-item:nth-child(2){
     margin: 0 30px;
@@ -567,7 +587,7 @@ input{
 .freason{
     background-image: url(../Images/backHouse.png);
     background-repeat: no-repeat;
-    display: none;
+    
 }
 
 .freason-box{
@@ -685,7 +705,7 @@ input{
     background-image: url(../Images/fantasies.png);
     background-repeat: no-repeat;
     background-size: cover;
-    display: none;
+    
 }
 
 .fantasies-box{
@@ -748,7 +768,7 @@ input{
     background-image: url(../Images/city.png);
     background-position: bottom;
     background-repeat: repeat-x;
-    display: none;
+    
 }
 
 .our-clients-box{
@@ -815,7 +835,7 @@ input{
 .geolocation{
     background-image: url(../Images/geoback.png);
     background-size: cover;
-    display: none;
+    
 }
 
 .geolocation-box{
@@ -842,7 +862,7 @@ input{
     display: flex;
     justify-content: space-between;
     width: 520px;
-    margin-bottom: 48.76px;
+    flex-wrap: wrap;
     margin-top: 45.8px;
 }
 
@@ -866,6 +886,11 @@ input{
 
 .geolocation-personal-date-item{
     color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 49px;
+}
+
+.geolocation-personal-date-item:last-child .geolocation-date-item-input{
+    width: 520px;
 }
 
 .geolocation-personal-date-item input::-webkit-input-placeholder{
@@ -903,7 +928,7 @@ input{
     line-height: 15px;
     position: relative;
     z-index: 333;
-    display: none;
+    
 }
 
 /**********ADAPTIVE*************/
@@ -975,6 +1000,313 @@ input{
     }
 
     /*COMPLETED-PROJECTS*/
+    .text-wrap{
+        margin: 0 15% 0 15%;
+        font-size: 22px;
+        line-height: 30px;
+    }
 
+    .conatiner-completed_projects-box-items{
+        margin-bottom: 72px;
+    }
+
+    .box-items-article-style{
+        font-size: 11px;
+        line-height: 17px;
+        margin: 0 14px;
+        text-align: center;
+    }
+
+    .projects_nav{
+        display: none;
+    }
+
+    .slider{
+        display: none;
+    }
+
+    .completed_projects-images > img:first-of-type{
+        display: none;
+    }
+
+    .completed_projects-images{
+        background-image: url(../Images/CPadap.png);
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        /*padding: 103px 0;*/
+        padding: 30% 0;
+    }
+
+    .completed_projects-images-left, .completed_projects-images-right{
+        display: flex;
+    }
+
+    .completed_projects-images-left{
+        margin-left: 14px;
+    }
+
+    .completed_projects-images-right{
+        margin-right: 14px;
+        /*padding: 103px 0;*/
+    }
+
+    .content-example{
+        
+        width: 100%;
+        margin: 0;
+    }
+
+    .content-example-description{
+        width: 40%;
+    }
+
+    .content-example-description:nth-child(odd){
+        order: -1;
+    }
+
+    .content-example-description > h3{
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .content-example-description > p {
+        font-size: 11px;
+        line-height: 15px;
+    }
+    /*
+    .completed_projects-images{
+        display: none;
+    }
+    */
+    .conatiner-completed_projects{
+        margin-bottom: 58px;
+    }
+
+    .conatiner-completed_projects-box{
+        flex-direction: column;
+    }
+
+    /*ONLINE-CONTROL*/
+    .online-control{
+        background-color: black;
+    }
+
+    .online-control-camera{
+        width: auto;
+        margin: 0 0 40.21px 0;
+    }
+
+    .online-control-video{
+        margin: 0;
+    }
+
+    .online-control-video-button{
+        margin: 150px 80px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .linebottom{
+        margin-top: 28px;
+    }
+
+    .online-control-article{
+        width: auto;
+        margin-bottom: 63px;
+    }
+
+    .text-for_article{
+        color: #fff;
+        font-size: 11px;
+        line-height: 19px;
+        
+    }
+
+    .online-control-input_of_personal_date{
+        width: auto;
+        margin: 0;
+        align-items: unset;
+    }
+
+    .input_of_personal_date{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+
+    .input_of_personal_date-item:first-of-type{
+        margin-bottom: 63px;
+    }
+
+    .input_of_personal_date-item{
+        color: rgba(255, 255, 255, 0.5);
+        
+    }
+
+    .input_of_personal_date-item input{
+        width: 100%;
+    }
+
+    .input_of_personal_date-item input::-webkit-input-placeholder{
+        color: #fff;
+    }
+
+    .label-text{
+        color: #fff;
+    }
+
+    .input_of_personal_date-checkbox{
+        margin: 27px 0 63px;
+    }
+
+    .item-margin-bottom{
+        margin-bottom: -22.5px;
+    }
+
+    .button-mobile-submit{
+        display: unset;
+        background: #E3B873;
+        box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+        border-radius: 2px;
+        border: none;
+        padding: 13px 33px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #ffff;
+        width: 100%;
+    }
+    /*TYPES-OF-REPAIR*/
+    .container-section-name{
+        margin-top: 60px;
+    }
+
+    .types_of_repair-content{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .types_of_repair-content .types_of_repair-content-item:nth-child(2){
+        margin: 60px 0 60px;
     
+    }
+
+    .types_of_repair-content-item-img1, .types_of_repair-content-item-img2, .types_of_repair-content-item-img3{
+        width: unset;
+    }
+
+    .types_of_repair-content-item-basic{
+        margin: -127px 0 0 0;
+        width: 80%;
+    }
+
+    /*.types_of_repair-content-item{
+        margin-bottom: 60px;
+    }*/
+    /*FREASON*/
+    .freason{
+        display: none;
+    }
+    /*FANTASIES*/
+
+    .fantasies{
+        display: unset;
+    }
+
+    .fantasies-box{
+        height: unset;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fantasies-list{
+        margin: 55px auto 24px;
+        text-align: center;
+    }
+
+    .fantasies-list-text{
+        display: none;
+    }
+
+    .fantasies-list h2{
+        width: auto;
+    }
+
+    .for-subtitle-h2{
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .fantasies-img{
+        display: none;
+    }
+
+    .fantasies-slider-mb{
+        background-image: url(../Images/clocks.png);
+        display: flex;
+        justify-content: space-between;
+        padding: 30% 0;
+        z-index: 1;
+    }
+
+    /*OUR-CLIENTS*/
+    .our-clients{
+        display: none;
+    }
+
+    /*GEOLOCATION*/
+    .geolocation{
+        background-image: none;
+        background: black;
+        z-index: 0;
+        margin-top: -120px;
+    }
+    .geolocation-feedback{
+        width: unset;
+        height: unset;
+        margin: 172px 0 0 0;
+    }
+
+    .geolocation-feedback-personal-date{
+        margin: 0;
+        align-items: unset;
+    }
+
+    .geolocation-feedback-personal-date-name_phone{
+        width: unset;
+    }
+
+    .geolocation-personal-date-item{
+        width: 100%;
+    }
+
+    .geolocation-feedback-personal-date input{
+        width: 100%;
+    }
+    .geolocation-personal-date-item:last-child .geolocation-date-item-input{
+        width: 100%;
+    }
+    .geolocation-adress{
+        margin-top: 46px;
+        display: flex;
+        flex-direction: column;
+    }
+    .geolocation-overlay{
+        background:unset;
+    }
+
+    .geolocation-adress-map-mob{
+        width: 340px;
+        height: 255px;
+        order: -1;
+    }
+
+    .geolocation-adress-subtitle{
+        font-size: 18px;
+        line-height: 25px;
+    }
+    /*FOOTER*/
+    .footer{
+        display: none;
+    }
 }

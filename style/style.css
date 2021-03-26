@@ -366,7 +366,7 @@ input{
     margin-left: 50px;
 }
 
-.completed_projects-images-left, .completed_projects-images-right{
+.completed_projects-images-arrow{
     display: none;
 }
 
@@ -379,10 +379,49 @@ input{
     margin-top: 9px;
 }
 
-.slider{
-    margin-top: 79.64px;   
+.dots{
+    display: flex;
+	justify-content: center;
+	margin-top: 36px;   
 }
 
+.dots::before {
+	content: "";
+	background-image: url(../Images/Larr.svg);
+	background-size: cover;
+	width: 41px;
+	height: 13px;
+	cursor: pointer;
+	margin-right: 29px;
+}
+
+.dots::after {
+	content: "";
+	background-image: url(../Images/Rarr.svg);
+	background-size: cover;
+	width: 41px;
+	height: 13px;
+	cursor: pointer;
+	margin-left: 29px;
+}
+
+.dot {
+	display: inline-block;
+	cursor: pointer;
+	width: 10px;
+	height: 10px;
+	background: rgba(255, 255, 255, 0.3);
+	border-radius: 50%;
+}
+
+.dot:nth-child(even) {
+	margin: 0 18px;
+}
+
+.dot:hover {
+	background: #ffffff;
+	transition: 0.2s;
+}
 /*ONLINECONTROL*/
 
 .online-control{
@@ -406,19 +445,27 @@ input{
 
 /***********************************/
 .online-control-video{
-    background-image: url(../Images/video.png);
+    width: 65%;
+    position: relative;
+    z-index: 1;
     margin: 31.21px auto 0;
 }
 
-.online-control-video-button{
-    z-index: 1;
-    margin: 175px 365px;
-    position: relative;
+.online-control-video::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    filter: drop-shadow(0px 20px 50px rgba(0, 0, 0, 0.15));
 }
 
 .online-control-video-button-icon{
-    width: 85px;
-    height: 85px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 /*.online-control-video-button{
     margin: 175px 365px;
@@ -915,6 +962,16 @@ input{
     margin-left: 15px;
 }
 
+.geolocation-map{
+    width: 100%;
+    margin-top: 43px;
+    margin-bottom: 66px;
+}
+
+.geolocation-map-mob{
+    display: none;
+}
+
 .geolocation-overlay{
     background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
 }
@@ -947,6 +1004,10 @@ input{
 
     .button{
         display: none;
+    }
+
+    .button-mobile-unset{
+        display: unset;
     }
 
     .container-content{
@@ -1021,36 +1082,39 @@ input{
         display: none;
     }
 
-    .slider{
+    .dots{
         display: none;
     }
 
-    .completed_projects-images > img:first-of-type{
+    /*.completed_projects-images > img:first-of-type{
         display: none;
-    }
+    }*/
 
     .completed_projects-images{
-        background-image: url(../Images/CPadap.png);
-        display: flex;
-        justify-content: space-between;
-        margin: 0;
-        /*padding: 103px 0;*/
-        padding: 30% 0;
+        display: block;
+        position: relative;
+        margin-bottom: 37px;
+        margin-left: 0;
     }
 
-    .completed_projects-images-left, .completed_projects-images-right{
-        display: flex;
+    .completed_projects-images-back{
+        width: 100%;
     }
 
-    .completed_projects-images-left{
-        margin-left: 14px;
+    .completed_projects-images-arrow{
+        display: block;
+        position: absolute;
+        top: 45%;
+        left: 14px;
+        cursor: pointer;
+        z-index: 10;
     }
 
-    .completed_projects-images-right{
-        margin-right: 14px;
-        /*padding: 103px 0;*/
+    .arrow-right{
+        left: 85%;
+        /*left: 93.5%;*/
     }
-
+   
     .content-example{
         
         width: 100%;
@@ -1098,13 +1162,20 @@ input{
     }
 
     .online-control-video{
-        margin: 0;
+        width: 95%;
+        margin-top: 40px;
     }
 
-    .online-control-video-button{
-        margin: 150px 80px;
-        display: flex;
-        justify-content: center;
+    .online-control-video::before{
+        width: 100%;
+    }
+
+    .online-control-video-button-icon{
+        width: 20%;
+    }
+
+    .online-control-video-image{
+        width: 100%;
     }
 
     .linebottom{
@@ -1242,10 +1313,9 @@ input{
     }
 
     .fantasies-slider-mb{
-        background-image: url(../Images/clocks.png);
-        display: flex;
-        justify-content: space-between;
-        padding: 30% 0;
+        display: block;
+        position: relative;
+        margin-top: 38px;
         z-index: 1;
     }
 
@@ -1295,9 +1365,7 @@ input{
         background:unset;
     }
 
-    .geolocation-adress-map-mob{
-        width: 340px;
-        height: 255px;
+    .geolocation-map{
         order: -1;
     }
 
@@ -1308,5 +1376,25 @@ input{
     /*FOOTER*/
     .footer{
         display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+
+    .types_of_repair-content-item{
+        margin: 0 auto;
+    }
+
+
+    .types_of_repair-content-item-img1, .types_of_repair-content-item-img2, .types_of_repair-content-item-img3{
+        width: 392px;
+    }
+
+    .types_of_repair-content .types_of_repair-content-item:nth-child(2){
+        margin: 60px auto 60px;
+    }
+
+    .arrow-right{
+        left: 93.5%;
     }
 }

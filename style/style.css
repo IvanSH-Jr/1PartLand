@@ -808,6 +808,10 @@ input{
     margin-top: -112.53px;
 }
 
+.fantasies-slider-mb{
+    display: none;
+}
+
 /*OURCLIENTS*/
 
 .our-clients{
@@ -989,7 +993,8 @@ input{
 }
 
 /**********ADAPTIVE*************/
-@media screen and (max-width: 768px){
+/*@media screen and (max-width: 768px)*/
+@media screen and (min-width: 375px) and (max-width: 1024px){
 
     .container{
         max-width: 768px;
@@ -1396,5 +1401,11 @@ input{
 
     .arrow-right{
         left: 93.5%;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1366px){
+    .container{
+        margin: 0 auto;
     }
 }
